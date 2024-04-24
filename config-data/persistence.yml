@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: models
+    name: persistence
   datasource:
     url: jdbc:mysql://200.45.208.91:3306/vps3_sandbox?serverTimezone=UTC
     username: vps3_sand
