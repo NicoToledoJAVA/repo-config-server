@@ -5,9 +5,9 @@ spring:
   application:
     name: persistence
   datasource:
-    url: jdbc:mysql://200.45.208.91:3306/vps3_sandbox?serverTimezone=UTC
-    username: vps3_sand
-    password: 123
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASS}
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,4 +20,4 @@ cloud:
   discovery:
     client:
       service-url:
-        defaultZone: http://200.45.208.91:8761
+        defaultZone: ${SERVER}
