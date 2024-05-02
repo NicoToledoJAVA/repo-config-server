@@ -21,3 +21,8 @@ cloud:
     client:
       service-url:
         defaultZone: ${SERVER}
+
+        # Configuración para deshabilitar SSL en Eureka Client
+  eureka:
+    instance:
+      securePortEnabled: false
